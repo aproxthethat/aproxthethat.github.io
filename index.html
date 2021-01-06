@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aeon</title>
+        <meta name="description" content="Your ultimate Discord bot with many utilities and API integrations.">
+        <meta name="theme-color" content="#3179bd">
+        <meta name="og:image" content="https://cdn.discordapp.com/avatars/635833307510079490/b3480e1378cc1e402525be1056ffdc0a.png?size=256">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/635833307510079490/b3480e1378cc1e402525be1056ffdc0a.png?size=256">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <style>
+        /*
+        *
+        * Aeon by flazepe
+        *
+        */
+        
+        body {
+            background-color: #111;
+            color: #e6e6e6;
+            line-height: 1.5;
+            
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 23px;
+        }
+        
+        .container { margin: auto; max-width: 90%; }
+        .center, .box div { text-align: center; }
+        .fa { margin-right: 10px; }
+        
+        #logo {
+            display: block;
+            width: 145px;
+            margin: 50px auto 0;
+        }
+        
+        .box div, #logo, .button, #statistics { box-shadow: #000 0 3px 10px -5px; border-radius: 5px; }
+        .box { width: 100%; text-align: center; }
+        .box p { text-align: left; }
+        
+        .box img {
+            max-width: 90%;
+            background-color: #36393f;
+            border-radius: 7px;
+            padding: 7px;
+            margin-bottom: 30px;
+        }
+        
+        .box div {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #000;
+            user-select: none;
+            font-weight: 600;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #232323;
+            transition: 0.2s;
+        }
+        
+        .button:hover { color: #fff; background-color: #333333; }
+        
+        a { color: #c4c4f3; text-decoration: none; transition: 0.2s; }
+        a:hover { color: #9090d0; }
+        
+        code { color: #ffb5b5; font-family: inherit; }
+        li { margin-bottom: 5px; }
+        ::selection { background-color: #fff; color: #000; }
+        
+        /* Desktop */
+        @media only screen and (min-width: 1032px) {
+            .container { max-width: 70%; }
+            .box-wrapper { display: flex; }
+            .box { margin: 0 10px; }
+        }
+        
+        @media only screen and (min-width: 2000px) {
+            .container { max-width: 65%; }
+        }
+        
+        @media only screen and (min-width: 2200px) {
+            .container { max-width: 60%; }
+        }
+        
+        @media only screen and (min-width: 2400px) {
+            .container { max-width: 55%; }
+        }
+        
+        @media only screen and (min-width: 2600px) {
+            .container { max-width: 50%; }
+        }
+        
+        @media only screen and (min-width: 2800px) {
+            .container { max-width: 45%; }
+        }
+        
+        @media only screen and (min-width: 3000px) {
+            .container { max-width: 40%; }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://cdn.discordapp.com/avatars/635833307510079490/b3480e1378cc1e402525be1056ffdc0a.png?size=256" alt="Aeon" id="logo">
+            <h1 style="font-size: 70px; margin: auto auto -30px;" class="center">Aeon</h1>
+            
+            <p class="center">Your ultimate <a title="Discord" href="https://discord.com" target="_blank">Discord</a> bot with many utilities and API integrations.</p>
+            
+            <h1>Features</h1>
+            
+            <div class="box-wrapper">
+                <div class="box">
+                    <div style="background-color: #232323;"><i class="fa fa-check" style="color: #b2ffb2;"></i>Easy to Use</div>
+                    <p>Aeon works right out of the box and does not need any configuration.</p>
+                </div>
+                
+                <div class="box">
+                    <div style="background-color: #232323;"><i class="fa fa-cogs" style="color: #c7c7ff;"></i>Efficient</div>
+                    <p>Aeon utilizes Discord's embed with simplicity in mind, used only where it is needed.</p>
+                </div>
+                
+                <div class="box">
+                    <div style="background-color: #232323;"><i class="fa fa-fire" style="color: #f5a0a0;"></i>Quick</div>
+                    <p>Aeon is blazing fast when it comes to responding to commands.</p>
+                </div>
+            </div>
+            
+            <h1>Featured Categories</h1>
+            
+            <div class="box-wrapper">
+                <div class="box">
+                    <div style="background-image: linear-gradient(to right, #317cb1, #308092);"><i class="fa fa-wrench"></i>Utility</div>
+                    <p>Utilities such as <code>Google (Assistant)</code>, <code>Translator</code>, <code>Dictionary</code>, and more.</p>
+                    <img src="showcase/google-assistant.png" alt="Google Assistant" title="Google Assistant">
+                </div>
+                
+                <div class="box">
+                    <div style="background-image: linear-gradient(to right, #7d6b3b, #8e765d);"><i class="fa fa-image"></i>Image Generation</div>
+                    <p>Variety of image generation commands to pick from.</p>
+                    <img src="showcase/fake-quote.png" alt="Fake Quote" title="Fake Quote">
+                    <img src="showcase/youtube-logo.png" alt="YouTube Logo" title="YouTube Logo">
+                </div>
+            </div>
+            
+            <div class="box-wrapper">
+                <div class="box">
+                    <div style="background-image: linear-gradient(to right, #a57f3a , #b1b12d);"><i class="fa fa-smile-o"></i>Fun</div>
+                    <p>Tons of fun commands such as <code>ASCII</code> and <code>Emojify</code>.</p>
+                     <img src="showcase/ascii.png" alt="ASCII" title="ASCII">
+                </div>
+                
+                <div class="box">
+                    <div style="background-image: linear-gradient(to right, #5f6696, #394b61);"><i class="fa fa-code"></i>Development</div>
+                    <p>Development commands such as <code>DNS</code>, <code>IP Lookup</code>, <code>Hastebin</code>, and <code>WHOIS</code>.</p>
+                    <img src="showcase/whois.png" alt="WHOIS" title="WHOIS">
+                </div>
+            </div>
+            
+            <h1>Featured Commands</h1>
+            
+            <div class="box-wrapper">
+                <div class="box">
+                    <div style="background-color: #1ed760; color: #000;"><i class="fa fa-spotify"></i>Spotify</div>
+                    <p>You can get information on <code>songs</code>, <code>albums</code>, <code>artists</code>, <code>users</code>, <code>playlists</code> and <code>member presences</code>.<br>This command can generate <code>cards for songs (including member presences) and albums</code>.</p>
+                    <img src="showcase/spotify-member-card.png" alt="Spotify Member Card" title="Spotify Member Card">
+                </div>
+                
+                <div class="box">
+                    <div style="background-color: #d67ca9; color: #000;"><i class="fa fa-circle"></i>osu!</div>
+                    <p>Fetch <code>user statistics</code>, <code>recent/top/first place scores</code>, and get <code>ranking leaderboard</code>.<br><br>Also generates <code>cards for users</code> and supports <code>member presences</code>.</p>
+                    <img src="showcase/osu-user-card.png" alt="osu! User Card" title="osu! User Card">
+                </div>
+            </div>
+            
+            <div class="box-wrapper">
+                <div class="box">
+                    <div style="background-color: #00aaff; color: #000;"><i class="fa fa-list"></i>AniList</div>
+                    <p>Search for <code>anime</code>, <code>manga</code>, <code>characters</code>, <code>studios</code>, and more from AniList. <code>MyAnimeList</code> command is also included.</p>
+                    <img src="showcase/anilist-anime.png" alt="AniList Anime" title="AniList Anime">
+                </div>
+                
+                <div class="box">
+                    <div style="background-color: #377096; color: #fff;"><i class="fa fa-steam"></i>Steam</div>
+                    <p>View <code>user information and their games</code> and <code>search for games</code> from Steam.</p>
+                    <br>
+                    <img src="showcase/steam-user.png" alt="Steam User" title="Steam User">
+                </div>
+            </div>
+            
+            <div class="center">
+                <a title="Invite" class="button" href="invite"><i class="fa fa-plus"></i>Invite Aeon</a>
+            </div>
+            
+            <h1>Support Aeon</h1>
+            
+            <ul id="support">
+                <li><a href="https://paypal.me/flazepe" target="_blank">PayPal</a></li>
+            </ul>
+            
+            <footer style="margin-top: 50px; margin-bottom: 50px;">
+                <small title="2020" style="font-size: 15px; color: #aaa;">&copy; flazepe</small>
+            </footer>
+        </div>
+        
+        <script>
+        const voteLinks = {
+            dbl: {
+                name: "Discord Bot List",
+                url: "https://top.gg/bot/635833307510079490/vote"
+            },
+            boats: {
+                name: "Discord Boats",
+                url: "https://discord.boats/bot/635833307510079490/vote"
+            },
+            bfd: {
+                name: "Bots for Discord",
+                url: "https://botsfordiscord.com/bot/635833307510079490/vote"
+            }
+        };
+        
+        const parameters = new URLSearchParams(window.location.search);
+        const botList = parameters.get("ref");
+        
+        if (voteLinks[botList]) document.querySelector("#support").innerHTML += `<li><a title="Vote" href="${voteLinks[botList].url}" target="_blank">Vote on ${voteLinks[botList].name}</a></li>`;
+        else document.querySelector("#support").innerHTML += Object.keys(voteLinks).map(x => `<li><a title="Vote" href="${voteLinks[x].url}" target="_blank">Vote on ${voteLinks[x].name}</a></li>`).join("");
+        </script>
+    </body>
+</html>
