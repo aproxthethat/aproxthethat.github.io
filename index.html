@@ -13,11 +13,21 @@
 <!-- -->
 </head>
 <body>
-<iframe src="music/murder-in-my-mind.mp3" allow="autoplay" loop  style="display:none">
+<i class="fas fa-play play-button" title="Play" onclick="music_event()">></i>
+<audio id="audio" src="music/murder-in-my-mind.mp3"></audio>
+   
+    <script>
+        var audio = document.getElementById("audio");
+
+        function music_event() {
+            return audio.paused ? audio.play() : audio.pause();
+        };
+    </script>
+<!-- <iframe src="music/murder-in-my-mind.mp3" allow="autoplay" loop  style="display:none"> 
 </iframe> 
 <audio  loop autoplay>
   <source src="music/murder-in-my-mind.mp3"  type="audio/mpeg">
-</audio>
+</audio>-->
   <div class="outer">
     <div class="middle">
       <div class="inner">
